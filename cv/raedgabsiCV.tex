@@ -1,0 +1,151 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage[a4paper,margin=1.5cm]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{fontawesome5}
+\usepackage{hyperref}
+\usepackage{array}
+
+\hypersetup{colorlinks=true, urlcolor=black, linkcolor=black}
+
+% Pas d'indentation, interligne compact
+\setlength{\parindent}{0pt}
+\pagestyle{empty}
+
+% Format des sections : titre + filet horizontal
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\vspace{-0.6em}\rule{\textwidth}{0.4pt}]
+\titlespacing{\section}{0pt}{10pt}{8pt}
+
+% Listes avec tiret cadratin, compactes
+\setlist[itemize]{label=---, leftmargin=1.2em, itemsep=1pt, topsep=2pt, parsep=0pt}
+
+\begin{document}
+
+%----------------------------------------------------------------------
+% EN-TÊTE
+%----------------------------------------------------------------------
+\begin{center}
+    {\Huge \textsc{Raed Gabsi}}\\[6pt]
+    \faMapMarker* \ Manouba, Tunisie \quad | \quad
+    \faPhone* \ +216 29 364 830 \quad | \quad
+    \faEnvelope \ \href{mailto:raed.gabsi@esprit.tn}{raed.gabsi@esprit.tn}\\[3pt]
+    \faLinkedin \ \href{https://linkedin.com/in/raedgabsi}{linkedin.com/in/raedgabsi} \quad | \quad
+    \faGithub \ \href{https://github.com/raedgb}{github.com/raedgb}
+\end{center}
+
+%----------------------------------------------------------------------
+% PROFIL TECHNIQUE
+%----------------------------------------------------------------------
+\section{Profil Technique}
+Ingénieur Full Stack spécialisé en informatique financière et actuarielle, avec une expertise en conception d'API, intégration de services tiers, automatisation de workflows métier et développement d'applications web orientées performance. Expérience sur des environnements assurantiels et bancaires, de la modélisation des données jusqu'au déploiement en production.
+
+%----------------------------------------------------------------------
+% COMPÉTENCES TECHNIQUES
+%----------------------------------------------------------------------
+\section{Compétences Techniques}
+\begin{tabular}{@{}>{\bfseries}p{4.2cm}p{12.5cm}@{}}
+Langages & Python, Java, C, SQL, JavaScript, TypeScript, HTML/CSS, R \\
+Frameworks & FastAPI, Flask, Spring Boot, Angular, React, Vue.js, Node.js, .NET \\
+Architecture et API & REST, SOAP, JSON/XML, validation de schémas, gestion d'erreurs, webhooks, intégration CRM \\
+Base de données & PostgreSQL, MySQL, SQL Server, MongoDB, optimisation SQL, indexation \\
+DevOps et Outils & Docker, Git, GitLab, CI/CD, n8n, Power BI, Trello, Plesk, \LaTeX \\
+Assurance et Finance & Tarification, comparaison de garanties, provisionnement, gestion des risques, Solvabilité II \\
+Data et IA & Data Mining, Machine Learning, Deep Learning, IA générative, chatbots, analyse prédictive \\
+\end{tabular}
+
+%----------------------------------------------------------------------
+% EXPÉRIENCE PROFESSIONNELLE
+%----------------------------------------------------------------------
+\section{Expérience Professionnelle}
+
+\textbf{Brokins - Développeur Full Stack} \hfill \textbf{Septembre 2025 -- Présent}
+\begin{itemize}
+    \item Développement des modules clés de la plateforme CAC : tarification, génération de devis PDF, gestion des parcours emprunteur/co-emprunteur.
+    \item Intégration d'API assureurs REST et SOAP, avec normalisation des réponses et gestion des rejets métier pour fiabiliser la comparaison des offres.
+    \item Implémentation des fonctionnalités de comparaison avancée : cotisations, éligibilité, garanties, quotités, exclusions et franchises.
+    \item Intégration de HubSpot via API : synchronisation des contacts, entreprises et deals, mise à jour des pipelines et traçabilité des interactions commerciales.
+    \item Mise en place d'un chatbot IA métier pour le courtage : qualification automatique des demandes, assistance conseiller et réponses contextualisées.
+    \item Automatisation avec n8n du traitement des emails conseillers : classification automatique par IA des demandes signalant un problème et résolution automatique des cas récurrents, réduisant le temps de traitement des demandes.
+    \item Déploiement en production sur OVHcloud avec Plesk : configuration des environnements, publication des versions, gestion des domaines et certificats SSL, suivi post-déploiement.
+\end{itemize}
+\textit{Technologies : Python, FastAPI, Angular, TypeScript, PostgreSQL, MySQL, REST, SOAP, HubSpot API, n8n, Docker, GitLab, OVHcloud, Plesk, IA générative (LLM), NLP.}
+
+\vspace{6pt}
+\textbf{Brokins - Stagiaire Développeur Full Stack} \hfill \textbf{Mars 2025 -- Septembre 2025}
+\begin{itemize}
+    \item Développement initial du comparateur CAC pour la comparaison en temps réel des offres d'assurance emprunteur.
+    \item Participation à la conception du backend FastAPI : endpoints de tarification, gestion des emprunteurs/co-emprunteurs, normalisation des données assureurs.
+    \item Développement front-end Angular : formulaires dynamiques, composants réutilisables, validation métier côté interface et amélioration UX.
+    \item Intégration d'API externes SOAP/REST pour l'obtention des tarifs, génération des propositions et suivi des statuts de souscription.
+    \item Mise en place des premiers flux d'automatisation (emails, suivi commercial, centralisation des données métiers).
+    \item \textit{Technologies : Python, FastAPI, Angular, TypeScript, MySQL, REST, SOAP, Git.}
+\end{itemize}
+
+\vspace{6pt}
+\textbf{Attijari Bank - Stagiaire Développeur Full Stack} \hfill \textbf{Juin 2024 -- Juillet 2024}
+\begin{itemize}
+    \item Développement d'un simulateur de leasing intégrant les calculs de mensualités, taux effectifs, échéanciers et coûts globaux.
+    \item Conception d'API backend Spring Boot (architecture en couches, logique métier, exposition de services sécurisés).
+    \item Développement d'interfaces Angular pour la saisie des scénarios de financement et la restitution des résultats de simulation.
+    \item Implémentation de la gestion des utilisateurs et des rôles pour sécuriser l'accès aux fonctionnalités.
+    \item Optimisation des requêtes SQL et structuration des données pour fiabiliser les traitements financiers.
+    \item \textit{Technologies : Java, Spring Boot, Angular, TypeScript, SQL Server/MySQL, Git.}
+\end{itemize}
+
+\vspace{6pt}
+\textbf{CNI - Stagiaire Développeur Frontend} \hfill \textbf{Août 2023 -- Octobre 2023}
+\begin{itemize}
+    \item Développement d'interfaces web responsive avec Angular pour des modules métiers internes.
+    \item Intégration de services REST et gestion des flux de données asynchrones côté front.
+    \item Création de composants mutualisés pour standardiser l'UI et accélérer les évolutions fonctionnelles.
+    \item \textit{Technologies : Angular, TypeScript, HTML, CSS, REST, Git.}
+\end{itemize}
+
+%----------------------------------------------------------------------
+% PROJETS ACADÉMIQUES
+%----------------------------------------------------------------------
+\section{Projets Académiques}
+\begin{itemize}
+    \item \textbf{Simulateur de Trading} : Plateforme temps réel pour simulation d'achat/vente d'actifs, suivi de portefeuille, calcul P\&L et visualisation des tendances du marché.\\
+    \textit{Technologies : FastAPI, Angular, MySQL.}
+    \item \textbf{Système de Gestion de Microfinance} : Application de gestion des clients, crédits, échéanciers, remboursements et indicateurs financiers avec back-office opérationnel.\\
+    \textit{Technologies : Java/Spring ou Python, SQL, Angular.}
+    \item \textbf{Plateforme d'Enchères} : Application web de ventes aux enchères temps réel avec gestion utilisateurs, notifications, historique des transactions et logique de surenchère.\\
+    \textit{Technologies : JavaScript/TypeScript, backend API, base SQL/NoSQL.}
+    \item \textbf{Actuariat Vie} : Modélisation actuarielle des risques vie, estimation des engagements futurs, tarification et simulation Monte Carlo sur données démographiques et financières.\\
+    \textit{Technologies : R, statistiques, modélisation probabiliste.}
+\end{itemize}
+
+%----------------------------------------------------------------------
+% FORMATION
+%----------------------------------------------------------------------
+\section{Formation}
+\begin{itemize}
+    \item \textbf{ESPRIT - Diplôme d'Ingénieur en Informatique, spécialité Fintech} \hfill 2021 -- 2025
+    \item \textbf{Le Mans, France - Mastère en Actuariat, Institut du Risque et d'Assurance (IRA)} \hfill 2023 -- 2025
+    \item \textbf{IPEIB - Institut Préparatoire aux Études d'Ingénieurs (Mathématiques - Physique)} \hfill 2019 -- 2021
+\end{itemize}
+
+%----------------------------------------------------------------------
+% CERTIFICATIONS
+%----------------------------------------------------------------------
+\section{Certifications}
+\begin{itemize}
+    \item \textbf{Cisco Certified Network Associate (CCNA)} - Cisco, 2023
+\end{itemize}
+
+%----------------------------------------------------------------------
+% LANGUES
+%----------------------------------------------------------------------
+\section{Langues}
+\begin{itemize}
+    \item \textbf{Arabe} : langue maternelle
+    \item \textbf{Français} : courant
+    \item \textbf{Anglais} : courant
+\end{itemize}
+
+\end{document}

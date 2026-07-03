@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raed Gabsi — Ingénieur Full Stack | Fintech & Assurance</title>
+  <meta name="description" content="Raed Gabsi, Ingénieur Full Stack spécialisé en informatique financière et actuarielle. Python, FastAPI, Angular, intégration d'API, IA générative.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== Navigation ===== -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#accueil" class="nav__logo">RG<span class="accent">.</span></a>
+      <nav class="nav__links" id="navLinks">
+        <a href="#apropos">À propos</a>
+        <a href="#competences">Compétences</a>
+        <a href="#experience">Expérience</a>
+        <a href="#projets">Projets</a>
+        <a href="#formation">Formation</a>
+        <a href="#contact" class="btn btn--small">Contact</a>
+      </nav>
+      <button class="nav__burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero" id="accueil">
+    <div class="container hero__inner">
+      <div class="hero__content">
+      <p class="hero__hello reveal">Bonjour, je suis</p>
+      <h1 class="hero__name reveal">Raed Gabsi<span class="accent">.</span></h1>
+      <h2 class="hero__title reveal">Ingénieur Full Stack — Fintech & Assurance</h2>
+      <p class="hero__desc reveal">
+        Spécialisé en <strong>informatique financière et actuarielle</strong> : conception d'API,
+        intégration de services tiers, automatisation de workflows métier et applications web
+        orientées performance, de la modélisation des données jusqu'au déploiement en production.
+      </p>
+      <div class="hero__actions reveal">
+        <a href="#projets" class="btn">Voir mes projets</a>
+        <a href="assets/raedgabsiCV.pdf" class="btn btn--outline" download>Télécharger mon CV</a>
+      </div>
+      <div class="hero__socials reveal">
+        <a href="https://github.com/raedgb" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.8 23.38c.6.12.83-.26.83-.57L9 21.07c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.08-.74.09-.73.09-.73 1.2.09 1.83 1.24 1.83 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.31.76-1.61-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.24 2.88.12 3.18a4.65 4.65 0 0 1 1.23 3.22c0 4.61-2.8 5.63-5.48 5.92.42.36.81 1.1.81 2.22l-.01 3.29c0 .31.2.69.82.57A12 12 0 0 0 12 .3z"/></svg>
+        </a>
+        <a href="https://linkedin.com/in/raedgabsi" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05a3.74 3.74 0 0 1 3.37-1.85c3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.55C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.72C24 .77 23.2 0 22.22 0z"/></svg>
+        </a>
+        <a href="mailto:raed.gabsi@esprit.tn" aria-label="Email">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6L22 7"/></svg>
+        </a>
+      </div>
+      </div>
+      <div class="hero__photo reveal">
+        <img src="assets/profile.jpg" alt="Raed Gabsi" width="320" height="320">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== À propos ===== -->
+  <section class="section" id="apropos">
+    <div class="container">
+      <h2 class="section__title reveal"><span class="section__num">01.</span> À propos</h2>
+      <div class="about reveal">
+        <div class="about__text">
+          <p>
+            Ingénieur diplômé d'<strong>ESPRIT</strong> (spécialité Fintech) et titulaire d'un
+            <strong>Mastère en Actuariat</strong> (Institut du Risque et d'Assurance, Le Mans),
+            je travaille aujourd'hui chez <strong>Brokins</strong> où je développe une plateforme
+            de comparaison d'assurance emprunteur (CAC) utilisée en production.
+          </p>
+          <p>
+            Mon terrain de jeu : les environnements <strong>assurantiels et bancaires</strong>.
+            Tarification, comparaison de garanties, intégration d'API assureurs REST/SOAP,
+            synchronisation CRM (HubSpot), chatbots IA métier et déploiement cloud (OVHcloud).
+          </p>
+          <p>
+            Ce qui me distingue : la double compétence <strong>technique + actuarielle</strong> —
+            je comprends autant le code que les modèles de risque, la Solvabilité II et le
+            provisionnement.
+          </p>
+        </div>
+        <div class="about__stats">
+          <div class="stat"><span class="stat__num">2+</span><span class="stat__label">ans d'expérience en environnement assurantiel & bancaire</span></div>
+          <div class="stat"><span class="stat__num">4</span><span class="stat__label">expériences professionnelles</span></div>
+          <div class="stat"><span class="stat__num">2</span><span class="stat__label">diplômes : Ingénieur Fintech & Mastère Actuariat</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Compétences ===== -->
+  <section class="section section--alt" id="competences">
+    <div class="container">
+      <h2 class="section__title reveal"><span class="section__num">02.</span> Compétences</h2>
+      <div class="skills">
+        <div class="skill-card reveal">
+          <h3>Langages</h3>
+          <ul class="tags">
+            <li>Python</li><li>Java</li><li>TypeScript</li><li>JavaScript</li><li>SQL</li><li>C</li><li>R</li><li>HTML/CSS</li>
+          </ul>
+        </div>
+        <div class="skill-card reveal">
+          <h3>Frameworks</h3>
+          <ul class="tags">
+            <li>FastAPI</li><li>Flask</li><li>Spring Boot</li><li>Angular</li><li>React</li><li>Vue.js</li><li>Node.js</li><li>.NET</li>
+          </ul>
+        </div>
+        <div class="skill-card reveal">
+          <h3>Architecture & API</h3>
+          <ul class="tags">
+            <li>REST</li><li>SOAP</li><li>JSON/XML</li><li>Webhooks</li><li>Validation de schémas</li><li>Intégration CRM</li>
+          </ul>
+        </div>
+        <div class="skill-card reveal">
+          <h3>Bases de données</h3>
+          <ul class="tags">
+            <li>PostgreSQL</li><li>MySQL</li><li>SQL Server</li><li>MongoDB</li><li>Optimisation SQL</li><li>Indexation</li>
+          </ul>
+        </div>
+        <div class="skill-card reveal">
+          <h3>DevOps & Outils</h3>
+          <ul class="tags">
+            <li>Docker</li><li>Git / GitLab</li><li>CI/CD</li><li>n8n</li><li>Plesk</li><li>Power BI</li><li>LaTeX</li>
+          </ul>
+        </div>
+        <div class="skill-card reveal">
+          <h3>Assurance & Finance</h3>
+          <ul class="tags">
+            <li>Tarification</li><li>Comparaison de garanties</li><li>Provisionnement</li><li>Gestion des risques</li><li>Solvabilité II</li>
+          </ul>
+        </div>
+        <div class="skill-card reveal">
+          <h3>Data & IA</h3>
+          <ul class="tags">
+            <li>Machine Learning</li><li>Deep Learning</li><li>IA générative (LLM)</li><li>NLP / Chatbots</li><li>Data Mining</li><li>Analyse prédictive</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Expérience ===== -->
+  <section class="section" id="experience">
+    <div class="container">
+      <h2 class="section__title reveal"><span class="section__num">03.</span> Expérience professionnelle</h2>
+      <div class="timeline">
+
+        <article class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <span class="timeline__date">Sept. 2025 — Présent</span>
+          <h3>Développeur Full Stack <span class="accent">@ Brokins</span></h3>
+          <ul>
+            <li>Développement des modules clés de la plateforme CAC : tarification, génération de devis PDF, parcours emprunteur/co-emprunteur.</li>
+            <li>Intégration d'API assureurs REST et SOAP avec normalisation des réponses et gestion des rejets métier.</li>
+            <li>Comparaison avancée des offres : cotisations, éligibilité, garanties, quotités, exclusions et franchises.</li>
+            <li>Intégration HubSpot : synchronisation contacts, entreprises, deals et pipelines commerciaux.</li>
+            <li>Chatbot IA métier pour le courtage : qualification automatique des demandes et assistance conseiller.</li>
+            <li>Workflow d'automatisation n8n connecté aux boîtes mail des conseillers : classification automatique des emails signalant un problème (IA/NLP) et résolution automatique des cas récurrents, réduisant le temps de traitement des demandes.</li>
+            <li>Déploiement en production sur OVHcloud avec Plesk : environnements, SSL, suivi post-déploiement.</li>
+          </ul>
+          <ul class="tags tags--tech">
+            <li>Python</li><li>FastAPI</li><li>Angular</li><li>PostgreSQL</li><li>HubSpot API</li><li>n8n</li><li>Docker</li><li>OVHcloud</li><li>LLM / NLP</li>
+          </ul>
+        </article>
+
+        <article class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <span class="timeline__date">Mars 2025 — Sept. 2025</span>
+          <h3>Stagiaire Développeur Full Stack <span class="accent">@ Brokins</span></h3>
+          <ul>
+            <li>Développement initial du comparateur CAC pour la comparaison en temps réel des offres d'assurance emprunteur.</li>
+            <li>Conception du backend FastAPI : tarification, gestion des emprunteurs, normalisation des données assureurs.</li>
+            <li>Front-end Angular : formulaires dynamiques, composants réutilisables, validation métier, amélioration UX.</li>
+            <li>Premiers flux d'automatisation : emails, suivi commercial, centralisation des données métiers.</li>
+          </ul>
+          <ul class="tags tags--tech">
+            <li>Python</li><li>FastAPI</li><li>Angular</li><li>TypeScript</li><li>MySQL</li><li>REST / SOAP</li>
+          </ul>
+        </article>
+
+        <article class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <span class="timeline__date">Juin 2024 — Juil. 2024</span>
+          <h3>Stagiaire Développeur Full Stack <span class="accent">@ Attijari Bank</span></h3>
+          <ul>
+            <li>Simulateur de leasing : mensualités, taux effectifs, échéanciers et coûts globaux.</li>
+            <li>API backend Spring Boot en architecture en couches avec services sécurisés.</li>
+            <li>Interfaces Angular de saisie des scénarios de financement et restitution des simulations.</li>
+            <li>Gestion des utilisateurs et rôles, optimisation des requêtes SQL.</li>
+          </ul>
+          <ul class="tags tags--tech">
+            <li>Java</li><li>Spring Boot</li><li>Angular</li><li>SQL Server</li><li>MySQL</li>
+          </ul>
+        </article>
+
+        <article class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <span class="timeline__date">Août 2023 — Oct. 2023</span>
+          <h3>Stagiaire Développeur Frontend <span class="accent">@ CNI</span></h3>
+          <ul>
+            <li>Interfaces web responsive Angular pour des modules métiers internes.</li>
+            <li>Intégration de services REST et gestion des flux asynchrones côté front.</li>
+            <li>Composants mutualisés pour standardiser l'UI et accélérer les évolutions.</li>
+          </ul>
+          <ul class="tags tags--tech">
+            <li>Angular</li><li>TypeScript</li><li>HTML/CSS</li><li>REST</li>
+          </ul>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Projets ===== -->
+  <section class="section section--alt" id="projets">
+    <div class="container">
+      <h2 class="section__title reveal"><span class="section__num">04.</span> Projets</h2>
+      <div class="projects">
+
+        <article class="project-card reveal">
+          <div class="project-card__icon">📈</div>
+          <h3>Simulateur de Trading</h3>
+          <p>Plateforme temps réel de simulation d'achat/vente d'actifs : suivi de portefeuille, calcul P&L et visualisation des tendances du marché.</p>
+          <ul class="tags tags--tech"><li>FastAPI</li><li>Angular</li><li>MySQL</li></ul>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-card__icon">🏦</div>
+          <h3>Gestion de Microfinance</h3>
+          <p>Application de gestion des clients, crédits, échéanciers, remboursements et indicateurs financiers, avec back-office opérationnel.</p>
+          <ul class="tags tags--tech"><li>Java / Spring</li><li>Python</li><li>SQL</li><li>Angular</li></ul>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-card__icon">🔨</div>
+          <h3>Plateforme d'Enchères</h3>
+          <p>Ventes aux enchères en temps réel : gestion utilisateurs, notifications, historique des transactions et logique de surenchère.</p>
+          <ul class="tags tags--tech"><li>TypeScript</li><li>API backend</li><li>SQL / NoSQL</li></ul>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-card__icon">📊</div>
+          <h3>Actuariat Vie</h3>
+          <p>Modélisation actuarielle des risques vie : estimation des engagements futurs, tarification et simulation Monte Carlo sur données démographiques et financières.</p>
+          <ul class="tags tags--tech"><li>R</li><li>Statistiques</li><li>Modélisation probabiliste</li></ul>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-card__icon">🧮</div>
+          <h3>Scoring Crédit par Machine Learning</h3>
+          <p>Moteur de scoring d'octroi de crédit : probabilité de défaut par régression logistique et XGBoost, explicabilité des décisions (SHAP) et API de scoring temps réel avec dashboard de suivi des risques.</p>
+          <ul class="tags tags--tech"><li>Python</li><li>Scikit-learn</li><li>FastAPI</li><li>PostgreSQL</li></ul>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-card__icon">💳</div>
+          <h3>Dashboard de Finances Personnelles</h3>
+          <p>Agrégation de comptes bancaires (Open Banking), catégorisation automatique des transactions par NLP, budgets, alertes et projections d'épargne avec visualisations interactives.</p>
+          <ul class="tags tags--tech"><li>Python</li><li>FastAPI</li><li>Angular</li><li>NLP</li><li>API bancaires</li></ul>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-card__icon">🕵️</div>
+          <h3>Détection de Fraude Bancaire</h3>
+          <p>Pipeline data science de détection de transactions frauduleuses : feature engineering sur données transactionnelles, gestion du déséquilibre de classes (SMOTE), modèles Random Forest et Isolation Forest, scoring en temps réel et dashboard d'alertes.</p>
+          <ul class="tags tags--tech"><li>Python</li><li>Pandas</li><li>Scikit-learn</li><li>FastAPI</li><li>Power BI</li></ul>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-card__icon">📐</div>
+          <h3>Provisionnement Non-Vie : Chain-Ladder & Bootstrap</h3>
+          <p>Estimation des provisions pour sinistres (IBNR) sur triangles de liquidation : méthodes Chain-Ladder, Mack et Bootstrap, quantification de l'incertitude et rapport automatisé conforme aux exigences Solvabilité II.</p>
+          <ul class="tags tags--tech"><li>R</li><li>ChainLadder</li><li>Actuariat non-vie</li><li>Solvabilité II</li></ul>
+        </article>
+
+      </div>
+      <p class="projects__more reveal">
+        Plus de projets sur <a href="https://github.com/raedgb" target="_blank" rel="noopener">github.com/raedgb →</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== Formation ===== -->
+  <section class="section" id="formation">
+    <div class="container">
+      <h2 class="section__title reveal"><span class="section__num">05.</span> Formation & Certifications</h2>
+      <div class="education">
+        <div class="edu-card reveal">
+          <span class="edu-card__date">2021 — 2025</span>
+          <h3>Diplôme d'Ingénieur en Informatique, spécialité Fintech</h3>
+          <p>ESPRIT — Tunis, Tunisie</p>
+        </div>
+        <div class="edu-card reveal">
+          <span class="edu-card__date">2023 — 2025</span>
+          <h3>Mastère en Actuariat</h3>
+          <p>Institut du Risque et d'Assurance (IRA) — Le Mans, France</p>
+        </div>
+        <div class="edu-card reveal">
+          <span class="edu-card__date">2019 — 2021</span>
+          <h3>Classes Préparatoires (Mathématiques - Physique)</h3>
+          <p>IPEIB — Institut Préparatoire aux Études d'Ingénieurs</p>
+        </div>
+        <div class="edu-card reveal">
+          <span class="edu-card__date">2023</span>
+          <h3>Cisco Certified Network Associate (CCNA)</h3>
+          <p>Cisco</p>
+        </div>
+      </div>
+      <div class="languages reveal">
+        <span>🌍 Langues :</span>
+        <ul class="tags"><li>Arabe — natif</li><li>Français — courant</li><li>Anglais — courant</li></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section class="section section--alt" id="contact">
+    <div class="container contact">
+      <h2 class="section__title reveal"><span class="section__num">06.</span> Contact</h2>
+      <p class="contact__text reveal">
+        Un projet, une opportunité ou simplement envie d'échanger sur la fintech et l'assurance ?
+        Ma boîte mail est ouverte.
+      </p>
+      <a href="mailto:raed.gabsi@esprit.tn" class="btn btn--large reveal">Me contacter</a>
+      <div class="contact__infos reveal">
+        <a href="mailto:raed.gabsi@esprit.tn">raed.gabsi@esprit.tn</a>
+        <span>•</span>
+        <a href="tel:+21629364830">+216 29 364 830</a>
+        <span>•</span>
+        <span>Manouba, Tunisie</span>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Raed Gabsi — Conçu et développé avec ❤️</p>
+      <div class="footer__links">
+        <a href="https://github.com/raedgb" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/in/raedgabsi" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
