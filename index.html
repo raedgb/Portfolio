@@ -12,6 +12,9 @@
 </head>
 <body>
 
+  <!-- ===== Barre de progression ===== -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
   <!-- ===== Navigation ===== -->
   <header class="nav" id="nav">
     <div class="container nav__inner">
@@ -34,9 +37,10 @@
   <section class="hero" id="accueil">
     <div class="container hero__inner">
       <div class="hero__content">
+      <p class="hero__badge reveal"><span class="hero__badge-dot"></span> Disponible pour de nouvelles opportunités</p>
       <p class="hero__hello reveal">Bonjour, je suis</p>
       <h1 class="hero__name reveal">Raed Gabsi<span class="accent">.</span></h1>
-      <h2 class="hero__title reveal">Ingénieur Full Stack — Fintech & Assurance</h2>
+      <h2 class="hero__title reveal">Ingénieur Full Stack — <span class="hero__typed" id="typed"></span><span class="hero__caret">&nbsp;</span></h2>
       <p class="hero__desc reveal">
         Spécialisé en <strong>informatique financière et actuarielle</strong> : conception d'API,
         intégration de services tiers, automatisation de workflows métier et applications web
@@ -339,6 +343,11 @@
       </div>
     </div>
   </section>
+
+  <!-- ===== Bouton retour en haut ===== -->
+  <button class="to-top" id="toTop" aria-label="Retour en haut">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
 
   <footer class="footer">
     <div class="container">
